@@ -1,0 +1,43 @@
+"use client"
+import React from 'react'
+import Exp from 'Components/Exp'
+import Skills from '@/Components/Skills'
+import Slide from '@/Components/Slide'
+
+
+const page = () => {
+  return (
+    <>
+  
+   <div className=' flex justify-center py-6 bg-[#071013] text-white'>
+      <div className="flex flex-col lg:flex-row items-start lg:items-center gap-6 p-4 w-full max-w-5xl shadow-neutral-100">
+        <div>
+            <div><h1 className='font-bold text-4xl'>Abdul Shakoor</h1></div>
+            <h2 className="text-lg sm:text-xl text-gray-100">Front-end Web Developer</h2>
+
+            <p className='text-justify p-4 text-sm sm:text-base'>Detail-oriented web developer with strong skills in web development and UI/UX design. Passionate about leveraging AI to improve user experience. Seeking freelance or full-time opportunities web projects.</p>
+        </div>
+        <div className="w-full grid grid-cols-2 gap-1">
+<div className=" p-4 flex items-center justify-center h-40">
+  <img src="/images/html.png" alt="HTML" className="h-full w-auto object-contain animate-pulse" />
+</div>
+<div className=" p-4 flex items-center justify-center h-40">
+  <img src="/images/css3.png" alt="CSS" className="h-full w-auto object-contain animate-pulse" />
+</div>
+<div className=" p-4 flex items-center justify-center h-40">
+  <img src="/images/java-script.png" alt="JavaScript" className="h-full w-auto object-contain animate-pulse" />
+</div>
+<div className=" p-4 flex items-center justify-center h-40">
+  <img src="/images/react.png" alt="React" className="h-full w-auto object-contain animate-pulse" />
+</div>
+</div>
+      </div>
+    </div>
+    <Skills/>
+    <Exp/>
+    <Slide/>
+    </>
+  )
+}
+
+export default page
